@@ -18,7 +18,7 @@
     </nav>
     
     <div class="container-fluid mt-4">
-        <h1>Trigger Event</h1>
+        <h1>Trigger Event (token: <span id="token"></span>)</h1>
 
 
         <div class="d-grid gap-2 p-4">
@@ -49,6 +49,13 @@
         const imgTwo = document.getElementById('img2');
         const note = document.getElementById('note');
         const reload = document.getElementById('reload');
+        const token = document.getElementById('token');
+
+
+        socket.on('securedToken', (msg) => {
+            console.log(`Token: ${msg}`)
+            token.innerHTML = msg;
+        })
 
         imgOne.addEventListener('click', (e) => {
             e.preventDefault();

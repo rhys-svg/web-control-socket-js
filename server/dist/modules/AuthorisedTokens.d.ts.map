@@ -1,0 +1,1 @@
+{"version":3,"file":"AuthorisedTokens.d.ts","sourceRoot":"","sources":["../../src/modules/AuthorisedTokens.ts"],"names":[],"mappings":"AAKA,qBAAa,eAAe;IAExB,KAAK,EAAE,MAAM,CAAC;IAEd,QAAQ,EAAE,MAAM,CAAC;gBAKL,KAAK,GAAE,MAAW,EAAE,QAAQ,GAAE,MAAa;IAOvD,oBAAoB,IAAI,MAAM;CAGjC"}

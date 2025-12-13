@@ -19,5 +19,11 @@
   },
   "devDependencies": {
     "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.6",
+    "express": "^5.2.1",
+    "socket.io": "^4.8.1",
+    "uuid": "^13.0.0"
   }
 }
