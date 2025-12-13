@@ -1,0 +1,23 @@
+{
+  "name": "web-control-socket",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/rhys-svg/web-control-socket-js#readme",
+  "bugs": {
+    "url": "https://github.com/rhys-svg/web-control-socket-js/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhys-svg/web-control-socket-js.git"
+  },
+  "license": "ISC",
+  "author": "Rhys Mason-Gorrie",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tsc && clear && node dist/main.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
