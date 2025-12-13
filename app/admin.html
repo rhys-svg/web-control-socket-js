@@ -27,6 +27,9 @@
         <button class="btn btn-primary" id="note" type="button">
             Send Notification
         </button>
+        <button class="btn btn-primary" id="reload" type="button">
+            Reload Client
+        </button>
         </div>
 
 
@@ -45,6 +48,7 @@
         const imgOne = document.getElementById('img1');
         const imgTwo = document.getElementById('img2');
         const note = document.getElementById('note');
+        const reload = document.getElementById('reload');
 
         imgOne.addEventListener('click', (e) => {
             e.preventDefault();
@@ -57,6 +61,10 @@
         note.addEventListener('click', (e) => {
             e.preventDefault();
             socket.emit('newElementAlert', 'https://placehold.co/600x400?text=Image+Two')
+        })
+        reload.addEventListener('click', (e) => {
+            e.preventDefault();
+            socket.emit('reloadClient');
         })
     </script>
 </body>

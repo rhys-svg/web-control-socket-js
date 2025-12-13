@@ -58,6 +58,10 @@ io.on('connection', (socket) => {
         io.emit('newElementAlert', msg);
     })
 
+    socket.on('reloadClient', () => {
+        io.emit('reloadClient', '');
+    })
+
     socket.on('disconnect', () => {
         console.log('[Server | SOCKET] A new client has disconnected.');
     })
