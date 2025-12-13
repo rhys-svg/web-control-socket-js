@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket</title>
+</head>
+<body>
+
+    <main>
+        <img id="remoteConfig" src="" alt="">
+    </main>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+    <script>
+        const remoteConfig = document.getElementById('remoteConfig');
+    const socket = io();
+
+    socket.on('newElement', (msg) => {
+        remoteConfig.src = msg;
+    })
+
+    socket.on('newElementAlert', (msg) => {
+        swal.fire('test')
+    })
+    
+    </script>
+</body>
+</html>
