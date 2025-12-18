@@ -10,3 +10,8 @@
  * 
  */
 
+import { AuthorisationClass } from "./classes/Authorisation.class.js";
+
+const authModule = new AuthorisationClass();
+
+authModule.createNewToken();
